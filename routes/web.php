@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('books', 'BookController');
+
+Route::get('/create', function () {
+    return view('create');
+});
